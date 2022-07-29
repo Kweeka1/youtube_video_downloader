@@ -1,0 +1,24 @@
+﻿<Window x:Class="Youtube.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Youtube"
+        mc:Ignorable="d"
+        Title="Youtube Video Downloader" 
+        Height="275" 
+        Width="765"
+        MinHeight="275"
+        MinWidth="765"
+        ResizeMode="CanMinimize"
+        >
+    <Grid Margin="2,-10,-6,-19" HorizontalAlignment="Center" Width="763">
+        <TextBox Padding="3 4 5 0" x:Name="VideoLink" HorizontalAlignment="Left" Height="28" Margin="21,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="393" FontSize="14" FontFamily="Arial" TextChanged="VideoLink_TextChanged"/>
+        <Button x:Name="Download" Content="Download" HorizontalAlignment="Left" Margin="633,19,0,0" VerticalAlignment="Top" Width="101" Height="28" FontSize="13" Click="Download_Click" FontFamily="Dubai"/>
+        <ComboBox x:Name="ResolutionMenu" HorizontalAlignment="Left" Height="28" Margin="536,19,0,0" VerticalAlignment="Top" Width="92" IsReadOnly="True" FontSize="14" RenderTransformOrigin="0.684,0.429" FontFamily="Dubai" />
+        <TextBox VerticalScrollBarVisibility="Visible" IsReadOnly="True" Foreground="Black" x:Name="OutputMsg" Height="141" Margin="21,55,29,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="13"/>
+        <Button Content="Select Folder" HorizontalAlignment="Left" Margin="430,19,0,0" VerticalAlignment="Top" Width="101" Height="28" FontSize="13" Click="Button_Click" FontFamily="Dubai"/>
+        <ProgressBar x:Name="progressBar1" HorizontalAlignment="Left" Height="25" Margin="21,205,0,0" VerticalAlignment="Top" Width="712"/>
+
+    </Grid>
+</Window>
